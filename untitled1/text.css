@@ -1,0 +1,1204 @@
+/ ************************************************* ***********************************
+МОБІЛЬНА НАВІГАЦІЯ
+************************************************** *********************************** /
+/ * змінити max-width для активації активного класу мобільного меню * /
+
+.mobile_menu_active #pagewrap {
+    підкладка-верх: 80 пікселів;
+}
+.page-parent.mobile_menu_active #pagewrap {padding-top: 0;}
+.mobile_menu_active #headerwrap {
+    висота: 80 пікселів;
+}
+.mobile_menu_active #header {
+    підкладка: 10px 0 5px;
+}
+
+/ *
+  САЙТ ЛОГОС І САЙТ ОПИС
+================================================ * /
+/*.mobile_menu_active # site-logo,
+.mobile_menu_active # site-description {
+	посада: статична;
+	плавати: немає;
+	ясно: обидва;
+}
+
+.mobile_menu_active # site-logo {
+	запас: 10px 0 10px;
+	дисплей: inline-block;
+} * /
+
+/ * скинути абсолютні елементи до статичного * /
+/*.mobile_menu_active # site-logo,
+.mobile_menu_active # site-description {
+	посада: статична;
+	плавати: немає;
+	ясно: обидва;
+} * /
+
+/ * логотип сайту * /
+/*.mobile_menu_active # site-logo {
+	font-size: 30px;
+	маржа: 0 0 10 пікселів;
+	підкладка: 0;
+} * /
+
+/ * опис сайту * /
+/*.mobile_menu_active # site-description {
+	маржа: 0;
+} * /
+.mobile_menu_active # site-logo {font-size: .64em; маржа-топ: -10px;}
+/*.page-parent .mobile_menu_active # site-log {font-size: .775em;} * /
+
+
+.mobile_menu_active # headerwrap.fixed-header # site-logo {margin-top: 0;}
+
+/ *
+СОЦІАЛЬНІ ЗВ'ЯЗКИ
+================================================ * /
+.mobile_menu_active .social-widget {
+	маржа: 0 0 1ем;
+	посада: статична;
+	плавати: немає;
+}
+.mobile_menu_active .social-widget .widgettitle {
+	дисплей: блок;
+	маржа: 0 0 .4em;
+}
+
+/ *
+ФОРМА ПОШУКУ
+================================================ * /
+.mobile_menu_active #headerwrap #searchform {
+	посада: відносна;
+	ліворуч: авто;
+	право: авто;
+	топ: авто;
+	дно: авто;
+	плавати: немає;
+	ясно: обидва;
+	маржа: 0 0 1ем;
+	підкладка: 0;
+	ширина: 210 пікселів;
+}
+.mobile_menu_active #headerwrap #searchform #s {
+	ширина: 100%;
+	плавати: немає;
+	-webkit-перехід: немає;
+	-моз-перехід: немає;
+	перехід: немає;
+	колір: #fff;
+	фоновий колір: rgba (255,255,255 ;, 1);
+}
+.mobile_menu_active #headerwrap #searchform #s: фокус,
+.mobile_menu_active #headerwrap #searchform #s: наведіть курсор на
+.mobile_menu_active #headerwrap #searchform .icon-search: hover + #s {
+	ширина: 100%;
+	колір: #fff;
+	фоновий колір: rgba (255,255,255 ;, 1);
+}
+.mobile_menu_active #headerwrap #searchform .icon-search: до {
+	підкладка: 0;
+	праворуч: 10 пікселів;
+	зверху: 9 пікселів;
+}
+
+/ *
+HEADER WIDGET
+================================================ * /
+/ * віджет заголовка * /
+.mobile_menu_active .header-widget {
+	посада: статична;
+	плавати: немає;
+	текст-вирівнювання: ліворуч;
+	ясно: обидва;
+	маржа: 0;
+}
+.mobile_menu_active .header-widget. widget {
+	маржа: 0 0 10 пікселів;
+}
+
+/ * гарантувати, що меню відображається на настільній версії * /
+тіло: не (.mobile_menu_active) # main-nav {
+	дисплей: блок! важливий;
+}
+тіло: не (.mobile_menu_active) # menu-icon span {
+	дисплей: немає;
+}
+
+/ *
+МЕНЮ ПАНЕЛЬ
+================================================ * /
+/ * Відображення мобільного меню * /
+/ * main-nav-wrap * /
+.mobile_menu_active # main-nav-wrap {
+	плавати: немає;
+	маржа-дно: 50 пікселів;
+}
+
+/ * значок меню * /
+.mobile_menu_active # menu-icon {
+	посада: абсолютна;
+	дисплей: блок;
+	зверху: 15 пікселів;
+	праворуч: 10 пікселів;
+	текстовий декор: немає;
+	font-size: 1.2em;
+}
+/ * Стилі мобільного меню * /
+.mobile_menu_active .sidemenu {
+	перехід: все .2s простота-в-в;
+	висота: 100%;
+	ширина: 210 пікселів;
+	підкладка: 50 пікселів 25 пікселів;
+	фоновий колір: # 000;
+	переповнення-y: прокрутка;
+	-webkit-переміщення-прокрутка: торкнутися;
+	-ms-scroll-chaining: немає;
+	дисплей: блок;
+	посада: фіксована;
+	верх: 0;
+	z-індекс: 111;
+}
+.mobile_menu_active # mobile-menu {
+	праворуч: -300 пікселів;
+}
+.mobile_menu_active # mobile-menu.sidemenu-on {
+	праворуч: 0;
+}
+.mobile_menu_active.sidemenu-active {
+	посада: відносна;
+}
+.mobile_menu_active.sidemenu-активний
+.mobile_menu_active.sidemenu-active #headerwrap {
+	ліворуч: 0;
+	перехід: ліворуч .2s легкість у виїзді;
+}
+/ * виправити накладення плеєра на нижній колонтитул, якщо меню мобільних пристроїв видно * /
+.mobile_menu_active.mobile-menu-visible # footer-player {
+	z-індекс: 99;
+}
+.mobile_menu_active.sidemenu-праворуч
+.mobile_menu_active.sidemenu-right #headerwrap {
+	залишилося: -150 пікселів;
+}
+.mobile_menu_active.sidemenu-left,
+.mobile_menu_active.sidemenu-left #headerwrap {
+	ліворуч: 150 пікселів;
+}
+.mobile_menu_active.admin-bar .sidemenu {
+	підкладка-топ: 90 пікселів;
+}
+.mobile_menu_active.admin-bar #headerwrap # menu-icon-close {
+	зверху: 50 пікселів;
+}
+.mobile_menu_active.admin-bar # main-nav-wrap {
+	маржа-дно: 90 пікселів;
+}
+
+/ * слайд-меню закрити * /
+.mobile_menu_active # menu-icon-close {
+	посада: абсолютна;
+	дисплей: блок;
+	колір: # 7f7f7f;
+	текстовий декор: немає;
+	зверху: 10 пікселів;
+	праворуч: 20 пікселів;
+	font-size: 2em;
+}
+.mobile_menu_active # menu-icon-close: після {
+	шрифт-сім'я: "змінити";
+	говорити: ніхто;
+	шрифт-стиль: нормальний;
+	шрифт вага: нормальний;
+	шрифт-варіант: нормальний;
+	текст-перетворення: немає;
+	лінія висота: 1;
+	-webkit-font-smoothing: згладжений;
+	-moz-osx-font-smoothing: чорно-білий;
+
+	вміст: "\ e646";
+	font-size: .8em;
+	колір: #fff;
+}
+.mobile_menu_active # menu-icon-close: наведіть курсор {
+	колір: #fff;
+}
+
+/ * main nav * /
+.mobile_menu_active # main-nav {
+	посада: статична;
+	підкладка: 0;
+	маржа: 15 пікселів 0;
+	фон: немає;
+	текст-вирівнювання: ліворуч;
+	плавати: немає;
+	висота: авто;
+}
+.mobile_menu_active # main-nav li {
+	плавати: немає;
+	дисплей: блок;
+	підкладка: 0;
+}
+
+/ * підрівень * /
+.mobile_menu_active # main-nav ul {
+	посада: статична;
+	дисплей: блок;
+	маржа: 0;
+	кордон: немає;
+	padding: 0 0 0 1em;
+	фон: немає;
+}
+.mobile_menu_active # main-nav ul li {
+	кордон: немає;
+}
+
+/ * меню посилання * /
+.mobile_menu_active # main-nav a
+.mobile_menu_active # main-nav ul a {
+	ширина: авто;
+	дисплей: блок;
+	кордон: немає;
+	підкладка: .6em 0;
+	маржа: 0;
+	колір: #ccc;
+	font-size: 1.1em;
+	шрифт-вага: жирний;
+	лінія висота: 1.5мм;
+	фон: немає;
+	текстовий декор: немає;
+	border-bottom: твердий 1px rgba (255,255,255, .1);
+	ясно: обидва;
+}
+.mobile_menu_active # main-nav> li: last-child a
+	кордон: немає;
+}
+
+/ * нижня частина рівня меню * /
+.mobile_menu_active # main-nav ul a {
+	шрифт вага: нормальний;
+}
+
+/ * наведіть курсор на меню * /
+.mobile_menu_active # main-nav a: hover,
+.mobile_menu_active # main-nav ul а: hover {
+	колір: #fff;
+}
+
+/ * піктограма підменю * /
+.mobile_menu_active # main-nav. menu-item-has-children> a: after,
+.mobile_menu_active # main-nav ul. menu-item-has-children> a: after {
+	дисплей: немає;
+}
+
+/ * поточна посилання * /
+.mobile_menu_active # main-nav. current_page_item> a,
+.mobile_menu_active # main-nav. поточний-menu-item> a {
+	колір: #fff;
+}
+.mobile_menu_active # main-nav. current_page_item a
+.mobile_menu_active # main-nav. Поточний-menu-item a {
+	кордон: немає;
+	border-bottom: твердий 1px rgba (255,255,255, .1);
+}
+.mobile_menu_active # main-nav. current_page_item a: hover,
+.mobile_menu_active # main-nav. Поточний-menu-item a: hover {
+	фон: немає;
+}
+
+@media screen і (max-width: 1200px) {
+
+	/ ************************************************* ***********************************
+	СТРУКТУРА
+	************************************************** *********************************** /
+	#pagewrap {
+		max-ширина: 100%;
+	}
+
+	.сторінка
+	. Повна ширина .timhti_builder_row .row_inner {
+		максимальна ширина: 96%;
+	}
+
+	/ *
+	МУЗИЧНИЙ ПРОГРАВАЧ
+	================================================ * /
+	.buttons-console-wrap {
+		дисплей: inline-block;
+		font-size: 1.5em;
+		маржа: 20 пікселів 0 0;
+		ширина: 14%;
+		маржа ліворуч: 2%;
+	}
+
+	/ ************************************************* ***********************************
+	POST
+	************************************************** *********************************** /
+	.loops-wrapper.list-thumb-image .пошта-вміст {
+		підстилка-лівий: 24%;
+	}
+	.loops-wrapper.list-thumb-image .post-title {
+		ширина: 100%! важливо;
+	}
+	.loops-wrapper.list-large-image .post-image {
+		Макс-ширина: 34%;
+		плавати: ліворуч;
+		маржа: 0 1em 1.3em 0;
+	}
+	.loops-wrapper.list-large-image.album .post-title {
+		ширина: 60%;
+	}
+}
+
+/ * змінити max-ширину для активації мобільного меню (#headerwrap додано, щоб перевизначити вихідний сигнал themify styling css) * /
+@media screen і (max-width: 1200px) {
+
+	/ *
+	слайдер пост
+	================================================ * /
+	.lops-wrapper.slider .carousel-nav-wrap. carousel-prev
+	.loops-wrapper.slider .carousel-nav-wrap. carousel-next {
+		посада: абсолютна;
+		верх: 50%;
+	}
+	/ * повзунок після вмісту * /
+	.loops-wrapper.slider .post-content {
+		підстилка-ліва: 28%;
+		ширина: авто;
+	}
+	.loops-wrapper.slider .post-meta {
+		ліворуч: 2%;
+	}
+
+	/ * POST * /
+	.loops-wrapper.grid3 .post-meta.post-date {
+		маржа ліворуч: 8 пікселів;
+		ширина: 76px;
+		висота: 76 пікселів;
+	}
+	.loops-wrapper.grid3 .post-meta.post-date .day {
+		font-size: 1.5em;
+		padding: 8px 0 0 0;
+	}
+	.loops-wrapper.grid3 .post-meta.post-date.month {
+		лінія висота: 1.5мм;
+	}
+	.loops-wrapper.grid3 .post-meta.post-date.month: after {
+		маржа: 0 авто;
+		маржа-дно: 1шт;
+	}
+	.loops-wrapper.grid3 .post-meta.post-date.year {
+		font-size: .85em;
+		лінія висота: 1.5мм;
+	}
+	.loops-wrapper.grid2 .post-meta.post-date {
+		маржа ліворуч: 10 пікселів;
+		ширина: 94px;
+		висота: 94px;
+	}
+	.loops-wrapper.grid2 .post-meta.post-date .day {
+		font-size: 2em;
+		підкладка: 10px 0 5px 0;
+	}
+	.loops-wrapper.grid2 .post-meta.post-date .month: after {
+		маржа: 2px авто;
+	}
+	.loops-wrapper.grid2 .post-meta.post-date.year {
+		font-size: .85em;
+	}
+	.loops-wrapper.list-thumb-image .post-image {
+		max-ширина: 20%;
+		плавати: ліворуч;
+		маржа: 0 1em 1em 0;
+	}
+	.loops-wrapper.list-thumb-image .пошта-вміст {
+		підстилка-лівий: 24%;
+	}
+	.loops-wrapper.list-thumb-image .post-title {
+		ширина: 100%! важливо;
+	}
+	.loops-wrapper.list-large-image .post-image {
+		Макс-ширина: 34%;
+		плавати: ліворуч;
+		маржа: 0 1em 1.3em 0;
+	}
+	.loops-wrapper.list-large-image.album .post-title {
+		ширина: 55%;
+	}
+
+	.lops-wrapper .buy {
+		дисплей: inline-block;
+	}
+
+	/ * слайд-шоу подій * /
+	.loops-wrapper.slider.event .post-meta {
+		дно: 40 пікселів;
+		ліворуч: 2%;
+		ширина: 98%;
+		текст-вирівнювання: ліворуч;
+	}
+	.loops-wrapper.slider.event .post-meta span {
+		дисплей: inline-block;
+	}
+	.loops-wrapper.slider.event .post-meta.post-date span {
+		дисплей: блок;
+	}
+	.loops-wrapper.slider.event .post-meta.post-date {
+		маржа ліворуч: 8 пікселів;
+		ширина: 76px;
+		висота: 76 пікселів;
+	}
+	.loops-wrapper.slider.event .post-meta.post-date .day {
+		font-size: 1.5em;
+		padding: 8px 0 0 0;
+	}
+	.loops-wrapper.slider.event .post-meta.post-date .month {
+		лінія висота: 1.5мм;
+	}
+
+	.loops-wrapper.slider.event .post-meta.post-date.month: after {
+		маржа: 0 авто;
+		маржа-дно: 1шт;
+	}
+
+	.loops-wrapper.slider.event .post-meta.post-date .year {
+		font-size: .85em;
+		лінія висота: 1.5мм;
+	}
+
+	/ *
+	МУЗИЧНИЙ ПРОГРАВАЧ
+	================================================ * /
+	# footer-player .tracklist {
+		ширина: 45%;
+	}
+	.buttons-console-wrap {
+		ширина: 12%;
+		маржа ліворуч: 2%;
+	}
+
+	/ * Альбом карусель * /
+	.sidebar-none.full_width .col-повний .module-text .loops-wrapper.album.slider .slideshow-wrap .caroufredsel_wrapper .slideshow .album-post> .post-content {
+		верх: 56%;
+	}
+	.sidebar-none.full_width .col-full .module-text .loops-wrapper.album.slider .slideshow-wrap .caroufredsel_wrapper .slideshow .album-post .post-content .record-details {
+		дисплей: немає;
+	}
+	.sidebar-none.full_width .col-full .module-text .loops-wrapper.album.slider .slideshow-wrap .caroufredsel_wrapper .slideshow .album-post .post-content. post-title {
+		font-size: 1.1em;
+	}
+	.sidebar-none.full_width .col-full .module-text .loops-wrapper.slider.album .record-details li {
+		ширина: 19.33%;
+		маржа праворуч: 10px! важливо;
+	}
+
+	/ * Галерея Thumbs * /
+	.loops-wrapper.grid2.gallery .post-content .post-title {
+		font-size: 1.6em;
+	}
+	.loops-wrapper.gallery .post-meta.post-date {
+		висота: авто;
+	}
+	.loops-wrapper.gallery .entry-content {
+		ширина: 98%;
+		текстовий переповнення: ellipsis;
+		переповнення: приховане;
+		білий простір: зараз;
+	}
+
+	/ * заголовок стовпця галереї сітки та публікація вмісту * /
+	.loops-wrapper.grid4gallery .post-content .entry-content,
+	.loops-wrapper.grid3gallery .post-content .entry-content {
+		дисплей: немає;
+	}
+	.loops-wrapper.grid4gallery .post-content .post-title,
+	.loops-wrapper.grid3gallery .post-content .post-title {
+		font-size: 1.0em;
+	}
+
+	.builder-tabs-wrap tr td: перша дитина {white-space: normal;}
+
+}
+
+@media screen і (max-width: 862px) {
+
+
+	/ ************************************************* ***********************************
+	АЛЬБОМ-КОНТЕЙНЕР
+	************************************************** *********************************** /
+	Альбом-контейнер. Альбом-обкладинка {
+		ширина: 65%;
+		маржа-дно: 1ем;
+	}
+	.album-container .album-info {
+		ширина: 30%;
+		маржа: 0;
+	}
+	.album-container .record-details li {
+		дисплей: блок;
+	}
+	альбом-контейнер. альбом-плейлист {
+		ширина: 100%;
+		плавати: немає;
+	}
+
+	/ ************************************************* ***********************************
+	ALBUM LIGHTBOX
+	************************************************** *********************************** /
+	.post-lightbox .album-lightbox.flipped .album-container {
+		переповнення-y: прокрутка;
+		-webkit-переміщення-прокрутка: торкнутися;
+	}
+	.post-lightbox .album-lightbox.flipped .album-container .album-playlist {
+		переповнення: видиме;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	/ ************************************************* ***********************************
+	ПОШТОВІ МАРКИ
+	************************************************** *********************************** /
+	.loops-wrapper.grid4 .post {
+		ширина: 48,4%; / * змінити сітку4 на 2 стовпці * /
+	}
+	.loops-wrapper.grid4 .post: n-th типу (2n + 1) {
+		маржа ліворуч: 0;
+		ясно: ліворуч;
+	}
+
+	/ * галерея пошта * /
+	.loops-wrapper.grid4gallery .post {
+		ширина: 50%; / * змінити сітку4 на 2 стовпці * /
+	}
+	.loops-wrapper.grid4gallery .post: n-th типу (2n + 1) {
+		маржа ліворуч: 0;
+		ясно: ліворуч;
+	}
+	.gallery-wrapper.masonry .item .gallery-caption .post-title {
+		font-size: 0.9em;
+	}
+}
+
+@media screen і (max-width: 760px) {
+
+	/ ************************************************* ***********************************
+	СТРУКТУРА
+	************************************************** *********************************** /
+	.pagewidth {
+		max-ширина: 90%;
+	}
+
+	#content {
+		ширина: 100%;
+		max-ширина: 100%;
+		плавати: немає;
+		ясно: обидва;
+	}
+
+	/ * бічна панель * /
+	#sidebar {
+		ширина: 100%;
+		max-ширина: 100%;
+		плавати: немає;
+		ясно: обидва;
+	}
+
+	/ ************************************************* ***********************************
+	POST
+	************************************************** *********************************** /
+	.loops-wrapper.slider.album .post-title {
+		маржа-дно: .4em;
+		плавати: немає;
+		дисплей: блок;
+		ширина: 100%;
+	}
+	.loops-wrapper.slider.album .record-details {
+		плавати: немає;
+		дисплей: блок;
+		ширина: 100%;
+		текст-вирівнювання: ліворуч;
+		розмір шрифту: 90%;
+	}
+	.loops-wrapper.slider .post-image: раніше,
+	.loops-wrapper.list-post .post-image: до {
+		font-size: 3em;
+		підкладка: .5em .3em;
+		кордон: 3px solid #fff;
+		верхній: 40%;
+	}
+	.loops-wrapper.grid3 .post-image: раніше,
+	.loops-wrapper.grid2 .post-image: до {
+		font-size: 2em! важливо;
+		підкладка: .3em .25em! важливо;
+		кордон: 2px solid #fff! важливо;
+		верх: 50%;
+	}
+
+	.loops-wrapper.list-post .post-content {
+		підкладка-ліворуч: 0;
+	}
+	.loops-wrapper.list-post.post-title {
+		маржа-дно: .4em;
+		плавати: немає;
+		посада: статична;
+		дисплей: блок;
+		ширина: 100%;
+		текст-вирівнювання: ліворуч;
+	}
+	.loops-wrapper.grid2 .рекорд-деталі {
+		розмір шрифту: 80%;
+	}
+	.loops-wrapper.grid2.album .post-title,
+	.loops-wrapper.grid3.album .post-title {
+		розмір шрифту: 95%;
+	}
+	.loops-wrapper.grid3 .рекорд-деталі {
+		дисплей: немає;
+	}
+	.loops-wrapper.list-post.record-details {
+		розмір шрифту: 80%;
+		посада: статична;
+		дисплей: блок;
+		ширина: 100%;
+		плавати: немає;
+		текст-вирівнювання: ліворуч;
+		стиль списку: немає;
+	}
+
+	/ * list-thumb-image * /
+	.loops-wrapper.list-thumb-image .пошта-вміст {
+		підстилка-лівий: 24%;
+	}
+	.loops-wrapper.list-thumb-image .record-details {
+		розмір шрифту: 90%;
+	}
+
+	/ * list-large-image * /
+	.loops-wrapper.list-large-image .пошта-вміст {
+		підстилка-лівий: 42%;
+	}
+	.loops-wrapper.list-large-image.album .post-title {
+		ширина: 100%;
+	}
+	.loops-wrapper.list-large-image .рекорд-деталі {
+		розмір шрифту: 80%;
+	}
+	.loops-wrapper.list-large-image .post-image {
+		 плавати: ліворуч;
+	}
+	/ * slider.event*/
+.loops-wrapper.slider.event .post-meta {
+    дно: 40 пікселів;
+    залишилося: 1%;
+    ширина: 99%;
+}
+
+/ ************************************************* ***********************************
+  МУЗИЧНИЙ ПРОГРАВАЧ
+  ************************************************** *********************************** /
+# footer-player .tracklist {
+      ширина: 35%;
+      маржа-топ: 0;
+      маржа праворуч: 10 пікселів;
+      font-size: .850em;
+  }
+# footer-player. volume {
+      маржа праворуч: 10 пікселів;
+  }
+# footer-player .post-image {
+      маржа праворуч: 10 пікселів;
+  }
+
+/* медіа плеєр */
+Альбом-контейнер. Альбом-обкладинка {
+    ширина: 50%;
+}
+
+.album-container .album-info {
+    ширина: 46%;
+}
+
+альбом-контейнер. альбом-плейлист {
+    ширина: 100%;
+}
+
+/ * Альбом карусель * /
+.module-text .loops-wrapper.album.slider .slideshow-wrap .caroufredsel_wrapper .slideshow .album-post .post-content .record-details {
+    дисплей: немає;
+}
+
+.sidebar-none.full_width .col-повний .module-text .loops-wrapper.album.slider .slideshow-wrap .caroufredsel_wrapper .slideshow .album-post> .post-content {
+    верхній: 100%;
+}
+
+.module-text .loops-wrapper.album.slider .slideshow-wrap .caroufredsel_wrapper .slideshow .album-post .post-content .post-title {
+    маржа-топ: 20 пікселів;
+}
+
+/ * Додайте і купуйте домашню сторінку, виправляючи макет у події * /
+.loops-wrapper.list-post.event .event-cta-wrapper {
+    посада: статична;
+}
+/ * виправлено макет у зображеннях модуля left * /
+.module-image.image-left. image-content {
+    ясно: ліворуч;
+}
+
+.ui.module-tab.vertical .tab-content {margin-left: 0;}
+.ui.module-tab.vertical .tab-nav {позиція: відносна; ліва: 0; топ: авто; ширина: 100%; дисплей: inline-block; вертикальна вирівнювання: зверху; фон: ніхто}
+.ui.module-tab.vertical .tab-nav li {дисплей: inline-block; вертикальне вирівнювання: нижній; фон: # 9D1D14}
+.ui.module-tab ul.tab-nav li.current
+.ui.module-tab.vertical .tab-nav> li.current {border-right: 1px solid # 9D1D14; border-bottom: none;}
+}
+/ * 760 * /
+
+@media screen and (max-width: 700px) {
+/ * вміст вставки галереї * /
+    .loops-wrapper.grid2.gallery .post-content .entry-content {
+        дисплей: немає;
+    }
+/ * заголовок галереї * /
+    .loops-wrapper.grid2.gallery .post-content .post-title {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .ui.module-tab.vertical .builder-tabs-wrap {padding-left: 0;}
+    td, th {padding-left: 10px; підстилка праворуч: 10px;}
+
+/ ************************************************* ***********************************
+  GRID
+  ************************************************** *********************************** /
+    .col4-1
+    .col4-2, .col2-1,
+    .col4-3,
+    .col3-1,
+    .col3-2 {
+        маржа ліворуч: 0;
+    / * в ширині 680px всі стовпчики повинні відповідати повній ширині * /
+    ширина: 100%;
+        max-ширина: 100%;
+    }
+
+/ ************************************************* ***********************************
+  HEADER
+  ************************************************** *********************************** /
+/ * prevent logo img розширити фіксований заголовок на мобільний * /
+    .Has-fixed-header #headerwrap # site-logo img {
+                                        ширина: авто;
+                                        максимальна висота: 40 пікселів;
+                                    }
+
+/ ************************************************* ***********************************
+  ПОШТОВІ МАРКИ
+  ************************************************** *********************************** /
+/ * всі повідомлення * /
+    .shortcode.loops-wrapper.list-post .post,
+    .shortcode.loops-wrapper.grid4 .post
+    .shortcode.loops-wrapper.grid3 .post
+    .shortcode.loops-wrapper.grid2 .post,
+    .shortcode.grid2-thumb .post
+    .shortcode.list-thumb-image .пошта,
+    .shortcode.list-large-image .пошта,
+    .loops-wrapper.list-post .post,
+    .loops-wrapper.grid4 .post
+    .loops-wrapper.grid3 .post
+    .loops-wrapper.grid2 .post
+    .loops-wrapper.grid2-thumb .post
+    .loops-wrapper.list-thumb-image .post,
+    .loops-wrapper.list-large-image .post {
+        ширина: авто;
+        маржа ліворуч: 0;
+        плавати: немає;
+    }
+
+/ * вміст обгортання відеоролика плаваючою * /
+    .grid2 #content .loops-wrapper.grid4.video .post
+    .grid3 #content .loops-wrapper.grid3.video .post,
+    .grid4 #content .loops-wrapper.grid2.video .post {
+        плавати: ліворуч;
+    }
+    .loops-wrapper.list-post .post,
+    .loops-wrapper.list-post .post,
+    .loops-wrapper.list-post .post {
+        переповнення: видиме;
+    }
+    .поштовий вміст
+    .loops-wrapper.list-post .post-content,
+    .loops-wrapper.grid2 .post-content {
+        padding-left: 0px;
+    }
+    .loops-wrapper.grid2.album .post-content {
+        маржа ліворуч: 0;
+    }
+
+/ * весь пост заголовка * /
+    .loops-wrapper.list-post. post-title,
+    .loops-wrapper.grid4 .post-title,
+    .loops-wrapper.grid3 .post-title,
+    .loops-wrapper.grid2 .post-title,
+    .loops-wrapper.grid2-thumb .post-title,
+    .loops-wrapper.list-thumb-image. post-title,
+    .loops-wrapper.list-large-image. post-title,
+    .loops-wrapper.slider .post-title {
+        font-size: 1.4em;
+    }
+
+/ * весь пост зображення * /
+    .loops-wrapper.list-post .post-image,
+    .loops-wrapper.grid4 .post-image,
+    .loops-wrapper.grid3 .post-image,
+    .loops-wrapper.grid2 .post-image {
+        плавати: немає;
+        посада: статична;
+        ширина: авто;
+        маржа: 0 0 1ем;
+        переповнення: видиме;
+    }
+
+/ * весь вміст публікації * /
+    .loops-wrapper.grid2-thumb .post-content,
+    .loops-wrapper.list-thumb-image .пошта-вміст {
+        переповнення: видиме;
+    }
+
+/ * слайдер пошта * /
+    .loops-wrapper.slider .post-content {
+        посада: статична;
+        фоновий колір: # 000;
+        підкладка-топ: 10 пікселів;
+        підкладка-дно: 5шт;
+        оббивка ліворуч: 30%;
+        ширина: авто;
+    }
+    .lops-wrapper.slider .carousel-nav-wrap. carousel-prev
+    .loops-wrapper.slider .carousel-nav-wrap. carousel-next {
+        верх: 50%;
+    }
+
+/ * пост-контент * /
+    Поштовий вміст {
+        переповнення: видиме;
+    }
+
+/ * post-meta * /
+    .post-meta.post-date {
+        маржа ліворуч: 10 пікселів;
+        ширина: 94px;
+        висота: 94px;
+    }
+    .post-meta.post-date .day {
+        font-size: 2em;
+        підкладка: 10px 0 5px 0;
+    }
+    .post-meta.post-date.month: after {
+        маржа: 2px авто;
+    }
+    .post-meta.post-date.year {
+        font-size: .85em;
+    }
+/ * подія * /
+    .loops-wrapper.slider.event .post-content {
+        посада: абсолютна;
+        ширина: 78%;
+        padding: 20px 5% 20px 17%;
+        font-size: .75em;
+    }
+    .loops-wrapper.slider.event .post-meta {
+        посада: відносна;
+        дно: 100 пікселів;
+    }
+
+    .loops-wrapper.slider.event .event-cta-wrapper {
+        посада: відносна;
+        плавати: немає;
+        z-index: 9999;
+        дисплей: немає;
+    }
+
+    .loops-wrapper.list-thumb-image.event .event-cta-wrapper
+    .loops-wrapper.list-large-image.event .event-cta-wrapper {
+        посада: статична;
+        плавати: немає;
+    }
+
+    .loops-wrapper.list-post.event .event-cta-wrapper {
+        посада: статична;
+        плавати: немає;
+        текст-вирівнювання: ліворуч;
+    }
+
+    body.single-event .list-post .post-content {
+        підкладка-ліворуч: 0;
+    }
+    .loops-wrapper.slider.event .post-image + .post-content .post-title a
+    посада: статична;
+    текст-вирівнювання: ліворуч;
+}
+
+/ ************************************************* ***********************************
+  МУЗИЧНИЙ ПРОГРАВАЧ
+  ************************************************** *********************************** /
+# footer-player .tracklist {
+      ширина: 62%;
+  }
+# footer-player. Buttons-wrap {
+      маржа праворуч: 0;
+  }
+# footer-player .post-image {
+      дисплей: немає;
+      видимість: прихована;
+  }
+# footer-player. volume {
+      дисплей: немає;
+      видимість: прихована;
+  }
+
+# footer-player .footer-player-internal .tracklist.wp-playlist .mejs-controls.theimage-player-volume {
+      дисплей: немає;
+  }
+
+# footer-player .footer-player-internal .tracklist .wp-playlist .mejs-controls .mejs-time rail {
+      маржа ліворуч: 80 пікселів;
+  }
+
+# footer-player .footer-player-internal .tracklist .wp-playlist .wp-playlist-current-item {
+      залишилося: 90px! важливо;
+  }
+
+/* медіа плеєр */
+Альбом-контейнер. Альбом-обкладинка {
+    ширина: 100%;
+}
+.album-container .album-info {
+    ширина: 100%;
+    маржа: 1ем 0;
+}
+альбом-контейнер. альбом-плейлист {
+    ширина: 100%;
+}
+
+/ *
+  СВІТЛІ ПОВНІСТЮ ВИСОТА
+================================================ * /
+.Themify_builder_row.full-height {
+    висота: авто;
+    підкладка: 20% 0! важливо;
+}
+
+/ * Виправлення перекриття відео-повідомлень * /
+.sidebar-none.full_width .col-full .module-text .loops-wrapper.video .video-post {
+    плавати: ліворуч;
+}
+
+/ * Кріпильна сітка 2 Пост-зображення позиції преси * /
+.loops-wrapper.grid2.press .post-image {
+    плавати: ліворуч;
+}
+
+/ * Макет сторінки в стилі пост-контенту в стилі життя * /
+.loops-wrapper.list-thumb-image .пошта-вміст {
+    підстилка-ліве: 5%;
+}
+
+/ * Галерея Grid2 повна ширина на 680 пікселів * /
+.loops-wrapper.grid2.gallery .post
+.loops-wrapper.grid3gallery .post
+.loops-wrapper.grid4gallery .post {
+    маржа: 0;
+    ширина: 100%;
+}
+
+/ * Одинарна назва сторінки для преси, альбому, події, галереї та відео, зменшений розмір шрифту * /
+.Все-прес. Пост-титул,
+. єдиний альбом .post-title,
+. єдиний пост. Пост-титул
+. Тільки галерея. Пост-титул
+. єдине відео .post-title {
+    розмір шрифту: 160%;
+}
+
+.loops-wrapper.grid3.press .post-image {
+    ширина: 30%;
+    плавати: ліворуч;
+}
+
+.loops-wrapper.grid3.press .post-content {
+    ясно: немає;
+}
+
+.loops-wrapper.grid3.press .post-share {
+    ширина: авто;
+}
+
+.gallery-wrapper.masonry .item .gallery-item-wrapper .gallery-caption {
+    дисплей: немає;
+}
+.Themify_builder_row.full-height.section-press {
+    підкладка: 4% 3%! важливо;
+    маржа: 0;
+}
+
+.Спеціальна галерея article.type-gallery .post-content {
+    підкладка-ліворуч: 0;
+}
+
+/ ************************************************* ***********************************
+  POST NAV
+  ************************************************** *********************************** /
+.пост-н.прев,
+.post-nav. next {
+    дисплей: блок;
+    ширина: 100%;
+    ясно: обидва;
+    маржа-дно: 10 пікселів;
+}
+/ * слайдер пошта * /
+.loops-wrapper.slider .post-content {
+    посада: статична;
+    фоновий колір: # 000;
+    підкладка-топ: 10 пікселів;
+    підкладка-дно: 5шт;
+    підстилка-лівий: 40%;
+    ширина: авто;
+}
+
+/ ************************************************* ***********************************
+  МУЗИЧНИЙ ПРОГРАВАЧ
+  ************************************************** *********************************** /
+# footer-player .tracklist {
+      ширина: 50%;
+  }
+# footer-player. volume {
+      дисплей: немає;
+      видимість: прихована;
+  }
+.buttons-console-wrap {
+    ширина: 18%;
+    маржа ліворуч: 2%;
+}
+
+/ ************************************************* ***********************************
+  КОМЕНТАРІ
+  ************************************************** *********************************** /
+.comlistlist {
+    підкладка-ліворуч: 0;
+}
+.comlistlist .commententry {
+    ясно: ліворуч;
+}
+.commentlist .avatar {
+    плавати: ліворуч;
+    ширина: 40 пікселів;
+    висота: 40 пікселів;
+    маржа: 0 1em 1em 0;
+}
+
+# footer-player .footer-player-internal .tracklist .wp-playlist .wp-playlist-current-item {
+      зверху: 10px! важливо;
+  }
+
+/ ************************************************* ***********************************
+  EVENT SINGLE
+  ************************************************** *********************************** /
+
+.одноразові події. Євент-одиночні деталі {
+    посада: статична;
+    маржа: 0 0 40 пікселів 0;
+    max-width: успадкувати;
+}
+
+. єдиний захід. екс-карта {
+    висота: 200px;
+}
+
+/ ************************************************* ***********************************
+  АЛЬБОМ
+  ************************************************** *********************************** /
+/ * купити кнопку * /
+кнопка "купити" {
+    font-size: .9em;
+}
+
+/ * трек * /
+.tracklist.track {
+    font-size: 1em;
+}
+
+ul.record-details {
+    дисплей: немає;
+}
+
+/ * заголовки повної ширини коду * /
+.sidebar-none.full_width .col-full .module-text> h1: перший з типів {
+    font-size: 2.8em;
+}
+.sidebar-none.full_width .col-full .module-text> h2: перший з типів {
+    font-size: 2.5em;
+}
+
+.sidebar-none.full_width .col-full .module-text> h3: перший з типів {
+    font-size: 1.2em;
+    лінійна висота: 1,2м;
+}
+.sidebar-none.full_width .col-full .module-text> h4: перший з типів {
+    font-size: 1em;
+    лінія висота: 1мм;
+}
+
+/ * список подій * /
+.sidebar-none.full_width .col-full .module-text .loops-wrapper.list-post.event h2: перший у своєму класі {
+    font-size: 1.8em;
+    підстилка вправо: 0;
+}
+
+.sidebar-none.full_width .col-full .module-text .loops-wrapper.list-post.event .post-image {
+    max-ширина: 25%;
+    плавати: ліворуч;
+    маржа: 0 1.4em 1em 0;
+}
+
+.sidebar-none.full_width .col-full .module-text .loops-wrapper.list-post.event .post-meta {
+    маржа праворуч: 0;
+}
+
+.sidebar-none.full_width .col-full .module-text .loops-wrapper.list-post.event .post-meta.post-date {
+    ширина: 80 пікселів;
+    висота: 80 пікселів;
+}
+
+.sidebar-none.full_width .col-full .module-text .loops-wrapper.list-post.event .post-meta.post-date .day {
+    font-size: 1.4em;
+    підкладка: 6px 0 0px 0;
+}
+
+.sidebar-none.full_width .col-full .module-text .loops-wrapper.list-post.event .event-info {
+    ясно: ліворуч;
+}
+
+.sidebar-none.full_width .col-full .module-text .loops-wrapper.list-post.event .post-title {
+    max-ширина: 100%;
+}
+
+/ * grid4 of .shortcode і .module до 100% ширини * /
+.shortcode.loops-wrapper.grid4 .post
+.module.loops-wrapper.grid4 .post {
+    ширина: 100%;
+}
+
+.Gallery-обгортка .Gallery-item {
+    ширина: 50%! важливо;
+}
+
+}
+
+@media screen і (max-width: 550px) {
+    .ui.module-tab.vertical .builder-tabs-wrap {margin: 0 -20px}
+    td, th {padding-left: 5px; підстилка вправо: 5 пікселів; font-size: 13px; лінія висота: 16px;}
+    .ui.builder_button, .ui.nav li> a, .ui.module-tab .tab-nav> li> {font-size: 90%}
+}
